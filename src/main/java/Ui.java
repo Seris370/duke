@@ -128,11 +128,7 @@ public class Ui {
             Task t = tasks.get(nums[i] - 1);
             String description = t.repr();
             descriptions.add(description);
-            response.append(description);
-            if (i == nums.length - 1) {
-                break;
-            }
-            response.append("\n");
+            response.append(description).append("\n");
         }
         System.out.println(line);
         System.out.println(format("Noted. I've removed these tasks: "));
